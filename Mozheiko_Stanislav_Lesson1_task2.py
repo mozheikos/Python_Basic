@@ -2,11 +2,12 @@ def number_mod_7(some_list):
     result = 0
     for num in some_list:
         a = 0
+        num_1 = num
         while num != 0:
             a = a + num % 10
             num = num // 10
-        if i % 7 == 0:
-            result = result + i
+        if a % 7 == 0:
+            result = result + num_1
     return result
 
 
